@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+    <title>mine sweeper</title>
+    <link rel="stylesheet" href="css/minesweeper.css">
+</head>
+
+<body onload="init()">
+    <div class="box">
+        <h1>Mine Sweeper</h1>
+        <h2 class="score">Score: <span class="spanscore">0</span></h2>
+        <h2 class="time">Time: <span class="spanetime">0</span></h2>
+        <p class="smilie" onclick="restartBtn()">😃</p>
+        <button class="easybtn" onclick="chooseLevel(4)">easy</button><button class="mediumbtn" onclick="chooseLevel(8)">medium</button><button class="hardbtn" onclick="chooseLevel(12)">hard</button>
+        <table border=" 1" cellpadding="10">
+            <tbody class="board"></tbody>
+        </table>
+
+
+    </div>
+
+    <script src="js/minesweeper.js"></script>
+</body>
+
+</html>
